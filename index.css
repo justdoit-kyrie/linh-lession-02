@@ -1,0 +1,108 @@
+body {
+  font-family: sans-serif;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 20px;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  border-radius: 100rem;
+  object-fit: cover;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 4px;
+}
+
+.wrapper {
+  background: white;
+  display: inline-block;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  border-radius: 6px;
+}
+
+.name {
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 2px;
+  letter-spacing: 0.025rem;
+}
+.email {
+  text-align: center;
+  font-size: 6px;
+  color: rgba(22, 24, 35, 0.34);
+  margin-bottom: 4px;
+}
+
+.flex {
+  display: flex;
+  padding: 6px 0;
+  margin-bottom: 6px;
+}
+
+.flex > * {
+  flex: 1;
+  padding: 0 8px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column:first-child {
+  border-right: 0.5px solid rgba(22, 24, 35, 0.12);
+}
+
+.column > span:first-child {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.column > span:last-child {
+  font-size: 6px;
+  color: rgba(22, 24, 35, 0.34);
+}
+
+.action {
+  border: 0.5px solid rgba(22, 24, 35, 0.12);
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.action:hover {
+  background-color: rgba(22,24,35,0.06);
+}
+
+.action > p:first-child {
+  font-size: 6px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
